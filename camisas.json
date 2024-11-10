@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Camisa Juventus I 2024/25",
+        "price": "149,51",
+        "image": "https://i.pinimg.com/736x/c4/b0/1d/c4b01de5ba834a1ba53aae3b49d33897.jpg",
+        "description": "Camisa oficial Juventus para a temporada 2024/25, com material de alta qualidade.",
+        "category": "Camisas de Futebol"
+    },
+    {
+        "id": 2,
+        "title": "Camisa Arsenal I 2024/25",
+        "price": "149,51",
+        "image": "https://i.pinimg.com/736x/12/ed/78/12ed78cc2e53b4a3d22fca783ddbd35c.jpg",
+        "description": "Camisa oficial Arsenal para a temporada 2024/25, modelo masculino, na cor vermelha.",
+        "category": "Camisas de Futebol"
+    },
+    {
+        "id": 3,
+        "title": "Camisa Corinthians III 2024/25",
+        "price": "149,51",
+        "image": "https://i.pinimg.com/564x/94/ee/95/94ee95cbad21bb13b47e08f0d55a500d.jpg",
+        "description": "Camisa oficial Corinthians para a temporada 2024/25, terceiro uniforme em design exclusivo.",
+        "category": "Camisas de Futebol"
+    },
+    {
+        "id": 4,
+        "title": "Camisa Argentina I 2024",
+        "price": "149,51",
+        "image": "https://i.pinimg.com/736x/6e/7a/9e/6e7a9e2ea1e5275dcaee1a91395ba811.jpg",
+        "description": "Camisa oficial da Seleção Argentina para a temporada 2024, modelo titular.",
+        "category": "Camisas de Futebol"
+    },
+    {
+        "id": 5,
+        "title": "Camisa Barcelona III 2024/25",
+        "price": "149,51",
+        "image": "https://i.pinimg.com/736x/09/ca/02/09ca0249b95866320c9614f2d6217572.jpg",
+        "description": "Camisa oficial Barcelona para a temporada 2024/25, modelo terceiro uniforme.",
+        "category": "Camisas de Futebol"
+    },
+    {
+        "id": 6,
+        "title": "Camisa Real Madrid 'Concept' 2023/24",
+        "price": "149,51",
+        "image": "https://i.pinimg.com/736x/61/5a/62/615a62046db4475082db80aa706e7fe0.jpg",
+        "description": "Camisa conceitual do Real Madrid para a temporada 2023/24, com design inovador.",
+        "category": "Camisas de Futebol"
+    }
+]
