@@ -57,6 +57,16 @@
         #toast-container .toast {
             opacity: 0.95;
         }
+
+        .discount-badge {
+            background: red;
+            color: white;
+            font-size: 0.8em;
+            padding: 3px 6px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
     </style>
 </head>
 
@@ -65,56 +75,16 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand h3 text-white d-flex align-items-center" href="#">
-                    <img src="img/icons8-bola-de-futebol-64.png" alt="Logo Peita Store" width="30" height="30" class="me-2">
+                    <img src="img/icons8-bola-de-futebol-64.png" alt="Logo Peita Store" width="30" height="30"
+                        class="me-2">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto"> <!-- mx-auto centraliza os itens -->
-                        <li class="nav-item">
-                            <a class="nav-link active border-bottom" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#produtos">Produtos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
-
-                    <div class="d-flex align-items-center ms-auto mt-2 mt-lg-0">
-                        <a href="#" class="nav-link text-white d-flex align-items-center">
-                            <i class="bi bi-person-fill me-2"></i>
-                            <span class="d-none d-lg-inline">
-                                <b>Olá! Faça login</b> <br> Ou cadastre-se
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                
-            </nav>
-        </div>
-    </header>
-
-    <!-- <header class="fixed-top bg-danger">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                
-                <a class="navbar-brand h3 text-white d-flex align-items-center" href="#">
-                    <img src="img/icons8-bola-de-futebol-64.png" alt="Logo Peita Store" width="30" height="30" class="me-2">
-                </a>
-                
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link active border-bottom" href="#home">Home</a>
@@ -126,8 +96,7 @@
                             <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
-                    
-                    
+
                     <div class="d-flex align-items-center ms-auto mt-2 mt-lg-0">
                         <a href="#" class="nav-link text-white d-flex align-items-center">
                             <i class="bi bi-person-fill me-2"></i>
@@ -137,16 +106,14 @@
                         </a>
                     </div>
                 </div>
+
             </nav>
         </div>
-    </header> -->
-
-
-
+    </header>
 
     <section class="text-center py-5 bg-danger" id="home">
-        <div class="container mt-5 d-flex align-items-center justify-content-between flex-wrap">
-            <div class="text-start">
+        <div class="container mt-5 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+            <div class="text-center text-lg-start mb-4 mb-lg-0">
                 <h2 class="fw-bold text-warning">Bem-vindo à Peita Store!</h2>
                 <p class="text-white">Oferecemos os melhores produtos para atender às suas necessidades.</p>
                 <a href="#produtos" class="btn bg-warning text-white fw-bold">Explore nossos produtos</a>
@@ -190,17 +157,46 @@
     <footer class="text-center py-3 bg-danger text-white">
         <div class="container">
             <p>&copy; 2024 Peita Store</p>
-            <p>
-                <a href="#" class="text-white me-3">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="#" class="text-white me-3">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="#" class="text-white">
-                    <i class="bi bi-twitter"></i>
-                </a>
-            </p>
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <img src="https://ncf-ssr-akamai.prd.naturacloud.com/_next/image?url=/natura/commons/elo.svg&w=128&q=70"
+                        alt="Elo" class="mx-2">
+                    <img src="https://ncf-ssr-akamai.prd.naturacloud.com/_next/image?url=/natura/commons/mastercard.svg&w=128&q=70"
+                        alt="MasterCard" class="mx-2">
+                    <img src="https://ncf-ssr-akamai.prd.naturacloud.com/_next/image?url=/natura/commons/visa.svg&w=128&q=70"
+                        alt="Visa" class="mx-2">
+                </div>
+            </div>
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-facebook text-white"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-instagram text-white"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-twitter text-white"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-youtube text-white"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-tiktok text-white"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-linkedin text-white"></i></a>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <img src="https://newimgebit-a.akamaihd.net/ebitBR/selo/img_59301.png" alt="Certificação Ebit"
+                        class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <a href="#" class="me-md-2 mb-2 mb-md-0">
+                        <img src="https://ncf-ssr-akamai.prd.naturacloud.com/_next/image?url=/natura/commons/app-store-badge.png&w=256&q=100"
+                            alt="App Store" class="img-fluid">
+                    </a>
+                    <a href="#" class="ms-md-2">
+                        <img src="https://ncf-ssr-akamai.prd.naturacloud.com/_next/image?url=/natura/commons/google-play-badge.png&w=256&q=100"
+                            alt="Google Play" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://ncf-ssr-akamai.prd.naturacloud.com/_next/image?url=/natura/commons/CrueltyFree.png&w=96&q=100"
+                        alt="Cruelty Free" class="img-fluid">
+                </div>
+            </div>
             <p>Desenvolvido por Marco Antônio</p>
         </div>
     </footer>
