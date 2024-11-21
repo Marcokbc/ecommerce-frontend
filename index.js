@@ -20,9 +20,11 @@ document
       .then(function (response) {
         var toastBody = document.querySelector(".toast-body");
         if (response === "OK") {
+          document.getElementById("toast").classList.remove("bg-warning");
           document.getElementById("toast").classList.add("bg-success");
           toastBody.innerHTML = "E-mail enviado com sucesso!";
         } else {
+          document.getElementById("toast").classList.remove("bg-success");
           document.getElementById("toast").classList.add("bg-warning");
           toastBody.innerHTML = "Erro ao enviar o e-mail: " + response;
         }
@@ -50,7 +52,7 @@ window.addEventListener("load", function () {
         const produtoCard = `
                     <div class="col-md-4 my-2">
                         <div class="card text-white position-relative shadow-sm hover-shadow-lg transition-transform scale-on-hover">
-                        <div class="discount-badge rounded">-30%</div>    
+                        <span class="badge bg-danger text-white position-absolute top-0 end-0 m-2">-30%</span>
                         <img src="${produto.image}" class="card-img" alt="${produto.title}">
                             <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
                                 <div class="bg-dark bg-opacity-50 p-3">
@@ -92,3 +94,25 @@ navLinks.forEach((link) => {
     setActiveLink(this);
   });
 });
+
+let cartCount = 0;
+
+document
+  .getElementById("produto-list")
+  .addEventListener("click", function (event) {
+    if (event.target.classList.contains("btn-warning")) {
+      event.preventDefault();
+
+      cartCount++;
+      document.getElementById("cart-count").textContent = cartCount;
+
+      var toastElement = document.getElementById("toast");
+      var toastBody = document.querySelector(".toast-body");
+      toastBody.innerHTML = "Produto adicionado ao carrinho com sucesso!";
+      toastElement.className =
+        "toast align-items-center text-bg-success border-0";
+
+      var toast = new bootstrap.Toast(toastElement);
+      toast.show();
+    }
+  });
